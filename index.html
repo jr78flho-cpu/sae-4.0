@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE 4.0 - IA Educacional</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1f2d3d">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>SAE 4.0</h1>
+  <p>Plataforma Inteligente de Prevenção de Evasão Escolar</p>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>Cadastro Inteligente de Aluno</h2>
+
+    <input type="text" id="nomeAluno" placeholder="Nome completo">
+    <input type="number" id="frequenciaAluno" placeholder="Frequência (%)">
+    <input type="number" id="faltasConsecutivas" placeholder="Faltas consecutivas">
+
+    <button id="btnRegistrar">Registrar Aluno</button>
+
+    <div id="resultado"></div>
+  </section>
+
+  <section class="card">
+    <h2>Dashboard Administrativo</h2>
+    <div id="dashboard"></div>
+  </section>
+
+  <section class="assistente">
+    <strong>Assistente SAE:</strong>
+    <div id="assistente"></div>
+  </section>
+
+</main>
+
+<script type="module" src="app.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+
+</body>
+</html>

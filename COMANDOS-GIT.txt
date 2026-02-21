@@ -1,0 +1,64 @@
+════════════════════════════════════════════════════════════════════════════════
+  SAE 4.0 - COMANDOS GIT PRONTOS PARA COPIAR E COLAR
+════════════════════════════════════════════════════════════════════════════════
+
+PASSO 1: Abra o Terminal/Prompt de Comando
+────────────────────────────────────────────────────────────────────────────────
+
+PASSO 2: Navegue até a pasta do projeto
+────────────────────────────────────────────────────────────────────────────────
+cd /home/ubuntu/sae-4.0
+
+OU se estiver em outro local:
+cd caminho/para/sae-4.0
+
+
+PASSO 3: Configure o Git (primeira vez apenas)
+────────────────────────────────────────────────────────────────────────────────
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@gmail.com"
+
+
+PASSO 4: Adicione o repositório remoto
+────────────────────────────────────────────────────────────────────────────────
+SUBSTITUA "seu-usuario" pelo seu nome de usuário do GitHub:
+
+git remote add origin https://github.com/seu-usuario/sae-4.0.git
+
+
+PASSO 5: Renomeie a branch para "main"
+────────────────────────────────────────────────────────────────────────────────
+git branch -M main
+
+
+PASSO 6: Faça o primeiro push (upload)
+────────────────────────────────────────────────────────────────────────────────
+git push -u origin main
+
+(Será pedido seu usuário e senha do GitHub)
+
+
+════════════════════════════════════════════════════════════════════════════════
+  RESUMO EM UM ÚNICO BLOCO (Copie e Cole Tudo)
+════════════════════════════════════════════════════════════════════════════════
+
+cd /home/ubuntu/sae-4.0
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@gmail.com"
+git remote add origin https://github.com/seu-usuario/sae-4.0.git
+git branch -M main
+git push -u origin main
+
+
+════════════════════════════════════════════════════════════════════════════════
+  DEPOIS DISSO:
+════════════════════════════════════════════════════════════════════════════════
+
+1. Vá para: https://github.com/seu-usuario/sae-4.0/settings/pages
+2. Em "Source", selecione "Deploy from a branch"
+3. Escolha "main" branch e pasta "/ (root)"
+4. Clique em "Save"
+5. Aguarde 1-2 minutos
+6. Seu site estará em: https://seu-usuario.github.io/sae-4.0
+
+════════════════════════════════════════════════════════════════════════════════

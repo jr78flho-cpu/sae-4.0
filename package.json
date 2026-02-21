@@ -1,0 +1,18 @@
+{
+  "name": "sae-4.0",
+  "version": "4.0.0",
+  "description": "SAE 4.0 - Plataforma Inteligente de Prevenção de Evasão Escolar",
+  "author": "Jair dos Santos Filho",
+  "license": "MIT",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "educacao",
+    "evasao",
+    "preditivo",
+    "pwa",
+    "firebase"
+  ]
+}
